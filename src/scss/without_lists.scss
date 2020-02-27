@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.ameno__title,
+.dorime__title,
+.latire__title {
+  margin-bottom: $default-margin-size;
+  font-size: $title-size;
+  text-align: center;
+}
+
+.ameno__background,
+.dorime__background,
+.latire__background {
+  max-height: calc(#{$card-size} - #{$title-size} - #{$default-margin-size});
+  height: 100%;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ameno__background {
+  background-image: url("../img/ameno.jpg");
+}
+
+.dorime__background {
+  background-image: url("../img/dorime.jpg");
+}
+
+.latire__background {
+  background-image: url("../img/latire.jpg");
+}

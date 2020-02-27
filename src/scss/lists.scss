@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+$rats: (ameno, dorime, latire);
+
+@each $rat in $rats {
+  .#{$rat}__background {
+    max-height: calc(#{$card-size} - #{$title-size} - #{$default-margin-size});
+    height: 100%;
+    border-radius: 5px;
+    background-image: url("../img/#{$rat}.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  .#{$rat}__title {
+    margin-bottom: $default-margin-size;
+    font-size: $title-size;
+    text-align: center;
+  }
+}
