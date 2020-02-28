@@ -1,31 +1,5 @@
-@import "./reset";
-@import "./variables.scss";
-
-// @import "./without_lists.scss";
-@import "./lists.scss";
+@import "reset", "variables", "1_lists/index", "2_imports/index";
 
 html {
   font-family: "Montserrat" sans-serif;
-}
-
-.wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-}
-.persons {
-  display: grid;
-  grid-template-columns: $card-size $card-size $card-size;
-  column-gap: 1rem;
-  row-gap: 1rem;
-}
-
-.ameno,
-.dorime,
-.latire {
-  width: 100%;
-  height: $card-size;
 }

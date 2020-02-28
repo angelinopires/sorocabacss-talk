@@ -12,6 +12,9 @@ $rats: (ameno, dorime, latire);
     background-position: center;
     background-size: contain;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+    $_this: &;
+    @debug "this: #{$_this}";
   }
   .#{$rat}__title {
     margin-bottom: $default-margin-size;

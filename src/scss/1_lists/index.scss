@@ -1,0 +1,24 @@
+// @import "./without_lists.scss";
+@import "./lists.scss";
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.persons {
+  display: grid;
+  grid-template-columns: $card-size $card-size $card-size;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.ameno,
+.dorime,
+.latire {
+  width: 100%;
+  height: $card-size;
+}
